@@ -5,6 +5,8 @@ var userClickedPatern =[];
 $(".btn").click(function() {
     var userChosenColour = $(this).attr("id");
     userClickedPatern.push(userChosenColour);
+    var audioUser = new Audio("sounds/" + userChosenColour + ".mp3");
+    audioUser.play();
     console.log(userClickedPatern);
 })
 
