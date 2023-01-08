@@ -3,11 +3,11 @@ var gamePattern = [];
 var userClickedPatern =[];
 
 
-$("button").click(function() {
-    var userChosenColor = this.attr("id");
+$(".btn").click(function() {
+    var userChosenColour = $(this).attr("id");
 })
-userClickedPatern = userClickedPatern.push(userChosenColor);
-console.groupCollapsed(userClickedPatern)
+userClickedPatern = userClickedPatern.push(userChosenColour);
+console.log(userClickedPatern)
 
 
 function nextSequence() {
