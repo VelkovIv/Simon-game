@@ -5,9 +5,10 @@ var userClickedPatern =[];
 
 $(".btn").click(function() {
     var userChosenColour = $(this).attr("id");
+    userClickedPatern = userClickedPatern.push(userChosenColour);
+    console.log(userClickedPatern);
 })
-userClickedPatern = userClickedPatern.push(userChosenColour);
-console.log(userClickedPatern)
+
 
 
 function nextSequence() {
